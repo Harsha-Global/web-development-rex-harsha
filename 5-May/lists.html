@@ -1,12 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lists</title>
-</head>
-<body>
-  Hello
-</body>
-</html>
+  <style>
+    .list1
+    {
+      list-style-type: square;
+    }
 
+    .list2
+    {
+      list-style-type: lower-roman;
+      /* disc  |  square  |  circle  |  decimal  |  decimal-leading-zero  |  
+lower-alpha  |  upper-alpha  |  lower-roman  |  upper-roman  |  none
+ */
+      list-style-image: url("bank.png");
+    }
+
+    .movie
+    {
+      list-style-type: decimal;
+    }
+
+    #list3
+    {
+      font-family: Tahoma;
+      font-size: 18px;
+    }
+
+    #list3 li
+    {
+      border: 1px solid red;
+      padding: 3px;
+      margin: 4px;
+    }
+
+    #list3 li:hover
+    {
+      background-color: #f0efef;
+    }
+
+    .movie li
+    {
+      width: 100px;
+      transition: transform 0.1s;
+    }
+
+    .movie li:active
+    {
+      transform: scale(0.9);
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="list1">
+    <li>ICICI Bank</li>
+    <li>HDFC Bank</li>
+    <li>HSBC Bank</li>
+  </ul>
+
+  <ol class="list2">
+    <li>ICICI Bank</li>
+    <li>HDFC Bank</li>
+    <li>HSBC Bank</li>
+  </ol>
+
+
+  <ul id="list3">
+    <li>2020
+      <ul class="movie">
+        <li>Movie 1</li>
+        <li>Movie 2</li>
+        <li>Movie 3</li>
+      </ul>
+    </li>
+    <li>2019
+      <ul class="movie">
+        <li>Movie 4</li>
+        <li>Movie 5</li>
+        <li>Movie 6</li>
+      </ul>
+    </li>
+    <li>2018
+      <ul class="movie">
+        <li>Movie 7</li>
+        <li>Movie 8</li>
+        <li>Movie 9</li>
+      </ul>
+    </li>
+  </ul>
+
+
+</body>
+
+</html>
