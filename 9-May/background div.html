@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backround Image Div Tag</title>
+  <style>
+    *
+    {
+      box-sizing: border-box;
+    }
+    body
+    {
+      font-family: Verdana;
+      font-size: 30px;
+      background-color: #e6a6a6;
+      padding: 0px;
+      margin: 0px;
+    }
+    .box
+    {
+      background-color: #d0ee8b;
+      width: 400px;
+      height: 300px;
+      float: left;
+      margin: 30px;
+      
+      background-size: cover;
+      padding-left: 120px;
+      padding-top: 50px;
+      color: white;
+      transition: transform 0.05s;
+    }
+    .box:hover
+    {
+      transform: scale(1.1);
+    }
+    #pic1
+    {
+      background-image: url("file1.jpg");
+    }
+    #pic2
+    {
+      background-image: url("file2.jpg");
+    }
+    #pic3
+    {
+      background-image: url("file3.jpg");
+    }
+  </style>
+</head>
+<body>
+  <div class="box" id="pic1">Flower</div>
+  <div class="box" id="pic2">Bird</div>
+  <div class="box" id="pic3">Sky</div>
+</body>
+</html>
