@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h1>Arrays</h1>
+    <script>
+        var states = [ "Texas", "New York", "Washington", "Georgia", "New Jersey" ];
+        console.log("All array:");
+        for (let i = 0; i < states.length; i++)
+        {
+            console.log(states[i]);
+        }
+
+        console.log("Reverse of array:");
+        for (let i = states.length - 1; i >= 0; i--)
+        {
+            console.log(states[i]);
+        }
+
+        console.log("first half:");
+        for (let i = 0; i < states.length / 2; i++)
+        {
+            console.log(states[i]);
+        }
+
+        console.log("second half:");
+        for (let i = Math.round(states.length / 2); i < states.length; i++)
+        {
+            console.log(states[i]);
+        }
+
+        console.log("first half in reverse:");
+        for (let i = Math.floor(states.length / 2); i >= 0; i--)
+        {
+            console.log(states[i]);
+        }
+    </script>
+</body>
+</html>
