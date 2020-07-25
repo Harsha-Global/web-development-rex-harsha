@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <h1>Objects</h1>
+    <script>
+        //creating object
+        var remote = {  
+                volume: 10,
+                plus: function() { this.volume++; },
+                minus: function() { this.volume--; }
+            };
+
+        //accesing properties & methods
+        console.log(remote.volume); //Output: 10
+        remote.plus(); //No output
+        console.log(remote.volume); //Output: 11
+        remote.plus();
+        remote.plus();
+        remote.minus();
+        console.log(remote.volume); //Output: 12
+
+    </script>
+</body>
+</html>

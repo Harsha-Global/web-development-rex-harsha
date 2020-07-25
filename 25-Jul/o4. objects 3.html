@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Net Salary Calculator
+    <script>
+        //reading inputs
+        var noOfWorkingHours = Number(prompt("No. of working hours"));
+        var pricePerHour = Number(prompt("Price per hour"));
+        var taxPercentage = Number(prompt("Tax percentage"));
+
+        //object
+        var employee = {
+            noOfWorkingHours: noOfWorkingHours,
+            pricePerHour: pricePerHour,
+            taxPercentage: taxPercentage,
+            calculateGrossSalary: function() {
+                var s = this.noOfWorkingHours * this.pricePerHour;
+                return s;
+            },
+            calculateTax: function() {
+                var t = this.calculateGrossSalary() * taxPercentage / 100;
+                return t;
+            },
+            calculateNetSalary: function() {
+                var n = this.calculateGrossSalary() - this.calculateTax();
+                return n;
+            }
+        }
+
+        console.log(employee.calculateGrossSalary());
+        console.log(employee.calculateTax());
+        console.log(employee.calculateNetSalary());
+    </script>
+</body>
+</html>
