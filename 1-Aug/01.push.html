@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Push</title>
+</head>
+<body>
+    <h1>push</h1>
+    <script>
+        var countries = [ "USA", "UK", "India" ];
+        countries.push("France");
+        countries.push("Russia");
+        console.log(countries); //[ "USA", "UK", "India", "France", "Russia" ]
+        countries.splice(0, 2);
+        countries.splice(2, 1);
+        console.log(countries); //[ "India", "France" ]
+    </script>
+</body>
+</html>

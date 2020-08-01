@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splice</title>
+</head>
+<body>
+    <div>Splicy</div>
+    <script>
+    var students = ["charles", "chris"];
+    students.push("jeff");
+    students.splice(1,0,"sonya","sunil");
+    students.push("brea");
+    students.splice(3,1);
+    //console.log(students);
+    var s = students[1];
+    students.splice(3, 0, s);
+    var j = students[4];
+    students.splice(1, 0, j);
+    students.splice(5, 1);
+    console.log(students);
+</script>
+    
+</body>
+</html>
